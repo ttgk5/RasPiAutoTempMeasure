@@ -2,5 +2,5 @@
     "board": "arduino:avr:uno",
     "programmer": "arduino:avrispmkii",
     "port": "COM3",
-    "sketch": "arduinotempmeasure\\arduinotempmeasure.c.ino"
+    "sketch": "arduino\\arduinotempmeasure.ino"
 }

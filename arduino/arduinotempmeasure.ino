@@ -54,19 +54,19 @@ void loop() {
 
   for (int i =0; i < 100; i++){
     if (resistance == rtLsit[i]){
-      Serial.print(i);    
+      Serial.println(i);    
       //Serial.print("℃ ");    
       break;
     }
     if (resistance > rtLsit[i]){
-      Serial.print(i-1);    
+      Serial.println(i-1);    
       //Serial.print("℃ ");    
       break;
     }
 
 
   }
-  Serial.println("");
+
   cnt++;
   
   delay(1000);
