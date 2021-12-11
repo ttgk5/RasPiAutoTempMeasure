@@ -1,18 +1,23 @@
 import re
+import os
 import serial
 import time
 import datetime
 import gsp as gs
  
-COM="COM3"
+
 bitRate=9600
 temp_data_buff = []
 
-
 dt_now = datetime.datetime.now()
- 
-ser = serial.Serial(COM, bitRate, timeout=0.1)
 
+if os.name == "nt":
+    COM="COM3"
+    ser = serial.Serial(COM, bitRate, timeout=0.1)
+
+elif os.name == "posix":
+    COM="/dev/ttyACM0"
+    ser = serial.Serial(COM, bitRate, timeout=0.1)
 
 def main():
 
