@@ -48,9 +48,9 @@ def main():
                 temp_data_buff.append(result.decode("utf-8"))
                 #print(result.decode("utf-8"), end="")
             
-            if len(temp_data_buff) == 720:
+            if len(temp_data_buff) == 60:
                 row_cnt += 1
-                if row_cnt == 31:
+                if row_cnt == 721:
                     col_cnt = col_cnt + 2
                     row_cnt = 2
 
