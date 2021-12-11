@@ -20,9 +20,8 @@ SPREADSHEET_KEY = '1S71xmmjHUmxaegW_N2LZJ0jZKmFUfjjunEJbR1styAo'
 #共有設定したスプレッドシートのシート1を開く
 worksheet = gc.open_by_key(SPREADSHEET_KEY).sheet1
 
-#A1セルの値を受け取る
-import_value = int(worksheet.acell('A1').value)
+
 
 #A1セルの値に100加算した値をB1セルに表示させる
-export_value = import_value+100
-worksheet.update_cell(1,2, export_value)
+
+#worksheet.update_cell(1,2, export_value)
